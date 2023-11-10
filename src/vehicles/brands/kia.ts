@@ -27,7 +27,19 @@ class SoulMpi2_0 extends IceVehicle {
   public emissionsPerKm: number = 178.334;
 }
 
+/**
+ * Kia Soul 2.0 MPI
+ * - Source for consumption & emissions: https://www.ultimatespecs.com/car-specs/Kia/109789/Kia-Soul-2017-16-T-GDi-DCT.html
+ */
+// eslint-disable-next-line @typescript-eslint/naming-convention
+class SoulT_GDI_1_6 extends IceVehicle {
+  public fuelConsumption: number = 6.9;
+
+  public emissionsPerKm: number = 156;
+}
+
 export {
   ESoul204,
   SoulMpi2_0,
+  SoulT_GDI_1_6,
 };

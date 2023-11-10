@@ -11,7 +11,7 @@ A library for providing various functions regarding vehicle emissions calculatio
 - Germany (2022)
 
 ### Included vehicle emissions & consumption data
-- Kia: e-Soul SK3 204, Soul MPI 2.0
+- Kia: e-Soul SK3 204, Soul (2.0 MPI, 1.6 T-GDI)
 
 ## Project Background
 As an electric vehicle owner, I wanted to know, when my electric vehicle will become greener than the equivalent internal combustion engine vehicle based on the current energy mix in my country. 
