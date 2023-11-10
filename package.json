@@ -1,0 +1,37 @@
+{
+  "name": "vehicle-emissions-calculator",
+  "version": "1.0.0",
+  "description": "Emissions calculator for vehicles",
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf ./build/ && tsc --project tsconfig.build.json",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joschiservice/ev-emission-calculator.git"
+  },
+  "author": "Joschua Haß",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joschiservice/ev-emission-calculator/issues"
+  },
+  "homepage": "https://github.com/joschiservice/ev-emission-calculator#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/jest": "^29.5.8",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  }
+}
