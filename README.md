@@ -6,6 +6,7 @@ A library for providing various functions regarding vehicle emissions calculatio
 - Calculate the emissions per kilometre rate
 - Calculate the emissions per electricity produced based on the energy mix
 
+## Included Data
 ### Included energy mix data
 - Germany (2022)
 
