@@ -1,5 +1,3 @@
-import { DriveBehaviourManager } from '../managers/DriveBehaviourManager';
-
 /**
  * Common interface for all types of vehicles
  */
@@ -20,11 +18,11 @@ export abstract class IVehicle {
   abstract getEmissionsPerKm(): number;
 
   /**
-   * Calculates in how many months the total emissions of both cars are the same
+   * Calculates the break-even point when the total emissions of both cars are the same
    * @param comparingVehicle
-   * @returns data about the break even point (months & km based on current DriveBehaviour)
+   * @returns break-even point in kilometres
    */
-  public getBreakEvenPointData(comparingVehicle: IVehicle) {
+  public getBreakEvenPointKm(comparingVehicle: IVehicle) {
     const currentVehicleEmissionsPerKm = this.getEmissionsPerKm();
     const comparingVehicleEmissionsPerKm = comparingVehicle.getEmissionsPerKm();
 
@@ -36,12 +34,7 @@ export abstract class IVehicle {
     const comparingEmissions = comparingVehicle.getProductionEmissions();
 
     // When the break even point will be reached
-    const months = (comparingEmissions - currentEmissions)
-      / (DriveBehaviourManager.drivenKmPerMonth
-        * (currentVehicleEmissionsPerKm - comparingVehicleEmissionsPerKm));
-
-    const km = months * DriveBehaviourManager.drivenKmPerMonth;
-
-    return { months, km };
+    return (comparingEmissions - currentEmissions)
+      / (currentVehicleEmissionsPerKm - comparingVehicleEmissionsPerKm);
   }
 }
