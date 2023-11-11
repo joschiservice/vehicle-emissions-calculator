@@ -1,0 +1,23 @@
+{
+  "name": "vehicle-emissions-calculator-example",
+  "version": "1.0.0",
+  "description": "Example console application for vehicle-emissions-calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joschiservice/vehicle-emissions-calculator.git"
+  },
+  "author": "Joschua Haß",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joschiservice/vehicle-emissions-calculator/issues"
+  },
+  "homepage": "https://github.com/joschiservice/vehicle-emissions-calculator#readme",
+  "dependencies": {
+    "vehicle-emissions-calculator": "file:../"
+  }
+}
