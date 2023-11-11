@@ -6,7 +6,7 @@ import { IEnergySource } from '../IEnergySource';
  * - Source emissions: https://www.tech-for-future.de/co2-kwh-strom/
  * - Source energy shares: https://www.destatis.de/DE/Presse/Pressemitteilungen/2023/03/PD23_090_43312.html
  */
-export class Germany2022EnergyMixConfig extends IEnergyMixConfig {
+export class Germany2022 extends IEnergyMixConfig {
   public energySources: IEnergySource[] = [
     {
       name: 'coal',

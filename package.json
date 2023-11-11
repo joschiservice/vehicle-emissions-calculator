@@ -2,6 +2,8 @@
   "name": "vehicle-emissions-calculator",
   "version": "1.0.0",
   "description": "Emissions calculator for vehicles",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "rimraf ./build/ && tsc --project tsconfig.build.json",
